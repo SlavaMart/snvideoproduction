@@ -1344,6 +1344,43 @@ ol {
 }
 
 /*---------------------
+    Page photo start
+-----------------------*/
+.container_galery{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 28px;
+}
+
+.img_gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (250px, 1fr) );
+  grid-gap: 30px;
+}
+
+.img_gallery img{
+  width: 45%;
+}
+
+.img_gallery:hover{
+  opacity: 1;
+}
+
+/*---------------------
+    Page photo finish
+-----------------------*/
+
+
+
+/*---------------------
     Blog
 -----------------------*/
 .blog {
