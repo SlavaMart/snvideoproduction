@@ -540,7 +540,11 @@ ol {
 
 .video-bg__content {
   z-index: 2;
+}
 
+.text-bg {
+  color: #fff;
+  
 }
 
 /* 
