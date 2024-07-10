@@ -546,7 +546,17 @@ ol {
 
 .text-bg {
   color: #fff;
-  
+  display: block;
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  position: center;
+  top: 100px;
+  opacity: 25;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 /* 
