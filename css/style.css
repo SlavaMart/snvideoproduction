@@ -536,6 +536,7 @@ ol {
   left: 0;
   object-fit: cover;
   z-index: 1;
+
 }
 
 .video-bg__content {
@@ -739,6 +740,12 @@ Video section */
 -----------------------*/
 .team {
   padding-bottom: 90px;
+}
+
+.team_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-title.team__title {
