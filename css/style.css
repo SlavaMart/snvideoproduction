@@ -424,6 +424,10 @@ ol {
   display: none;
 }
 
+.header__nav__social:focus{
+  color: #00bfe7;
+}
+
 /*---------------------
   Hero
 -----------------------*/
