@@ -537,18 +537,16 @@ ol {
   left: 0;
   object-fit: cover;
   z-index: 1;
-
 }
 
 .video-bg__content {
   z-index: 2;
+  background-color: #1000287c;
 }
 
 .text-bg {
   color: #fff;
-  display: block;
-  font-size: 35px;
- 
+  display: block; 
 }
 
 /* 
