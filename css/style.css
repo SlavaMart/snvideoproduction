@@ -1799,12 +1799,11 @@ Video section */
   margin-bottom: 0;
 }
 
-
 .contact__widget__item__phone{
   color:#adadad;
 }
 .contact__widget__item__phone:hover{
-  color: #0793fe;
+  color: #00bfe7;
 }
 
 /*---------------------
