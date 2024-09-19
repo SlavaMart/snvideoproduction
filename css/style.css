@@ -761,6 +761,7 @@ Video section */
   height: 390px;
   position: relative;
   overflow: hidden;
+  margin-left: 10px;
 }
 .team__item:hover .team__item__text {
   bottom: 0;
