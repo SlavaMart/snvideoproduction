@@ -294,7 +294,7 @@ ol {
   Header
 -----------------------*/
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -302,8 +302,9 @@ ol {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9;
   background-color: #100028;
-  
+
 }
+
 
 .header__logo {
   padding: 30px 0;
@@ -319,12 +320,12 @@ ol {
 
 .header__nav__menu {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 25px;
 }
 .header__nav__menu ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 25px;
   position: relative;
 }
 .header__nav__menu ul li.active a:after {
@@ -428,6 +429,69 @@ ol {
 .header__nav__social:focus{
   color: #00bfe7;
 }
+
+/*---------------------
+  Language
+-----------------------*/
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lang-btn span {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #1c0e35;
+  border: 1px solid #333;
+  z-index: 100;
+  min-width: 140px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+
+.lang-menu a:hover {
+  background-color: #00bfe7;
+  color: #000;
+}
+
+.lang-menu a.active {
+  font-weight: bold;
+}
+
+/*---------------------
+  Language
+-----------------------*/
+
 
 /*---------------------
   Hero

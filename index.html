@@ -30,54 +30,121 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Header Section Begin -->
+     <!-- Header Section Begin -->
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo3.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Video</a></li>
-                                <!-- <li><a href="./photo.html">Photo</a></li> -->
-                                <li><a href="./services.html">Services</a></li>
-                                <!-- <li><a href="#">Blog</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index-en.html"><img alt="" src="img/logo3.png" /></a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="./index-en.html">Heim</a></li>
+                  <li><a href="./about-en.html">Um okkur</a></li>
+                  <li><a href="./portfolio-en.html">Verkefnin</a></li>
+                  <!-- <li><a href="./photo.html">Photo</a></li> -->
+                  <li><a href="./services-en.html">Þjónusta</a></li>
+                  <!-- <li><a href="#">Blog</a>
                                     <ul class="dropdown">
                                         <li><a href="./blog.html">Blog</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li> -->
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="tel:+3548317453" class="contact__widget__item__phone"><i class="fa fa-phone"></i> +354 831 74 53</a>
-                            <a href="https://www.instagram.com/videosn_/" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-instagram"></i></a> 
-                            <a href="https://www.facebook.com/profile.php?id=61561361626344" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@SNVideoProduction" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
+                  <li><a href="./contact-en.html">Hafa samband</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a class="contact__widget__item__phone" href="tel:+3548317453"
+                  ><i class="fa fa-phone"></i> +354 831 74 53</a
+                >
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.instagram.com/videosn_/"
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.facebook.com/profile.php?id=61561361626344"
+                  target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.youtube.com/@SNVideoProduction"
+                  target="_blank"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+                <!-- Выбор языка -->
+                <div class="language-dropdown">
+                  <div class="lang-btn">
+                    <img
+                      alt="IS"
+                      height="14"
+                      src="img/flags/is.png"
+                      width="20"
+                    />
+                    IS <span>▼</span>
+                  </div>
+                  <div class="lang-menu">
+                    <a class="active" href="index.html">
+                      <img
+                        alt="IS"
+                        height="14"
+                        src="img/flags/is.png"
+                        width="20"
+                      />
+                      Icelandic
+                    </a>
+                    <a href="index-en.html">
+                      <img
+                        alt="EN"
+                        height="14"
+                        src="img/flags/gb.png"
+                        width="20"
+                      />
+                      English
+                    </a>
+                  </div>
                 </div>
+                <!-- Выбор языка -->
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const dropdown =
+                      document.querySelector(".language-dropdown");
+                    const menu = dropdown.querySelector(".lang-menu");
+                    const button = dropdown.querySelector(".lang-btn");
+                    dropdown.addEventListener(
+                      "mouseenter",
+                      () => (menu.style.display = "block")
+                    );
+                    dropdown.addEventListener(
+                      "mouseleave",
+                      () => (menu.style.display = "none")
+                    );
+                  });
+                </script>
+              </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
+          </div>
         </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
     </header>
+
     <!-- Header End -->
 
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="video-bg">
             <video src="./video/video-bg.mp4" type="video.mp4" autoplay muted loop></video>
-            <div class="video-bg__content">
+            <!-- <div class="video-bg__content">
                 <h1 class="text-bg">SN VIDEO PRODUCTION</h1>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="hero__slider owl-carousel">
             <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
@@ -333,11 +400,11 @@
                     <div class="team__item team__item--second set-bg" data-setbg="img/team/team-6.jpg">
                         <div class="team__item__text">
                             <h4>NATALI OSONS</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
+                            <p>Stofnandi & Framleiðandi</p>
+                            <!-- <div class="team__item__social">
                                 <a href="https://www.instagram.com/osonsraw?igsh=MWhtYXVqOXRwM253dg=="target = "_blank"><i class="fa fa-instagram"></i></a> 
                                 <a href="https://www.facebook.com/osons"target = "_blank"><i class="fa fa-facebook"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -345,11 +412,11 @@
                     <div class="team__item team__item--third set-bg" data-setbg="img/team/team-5.jpg">
                         <div class="team__item__text">
                             <h4>SLAVA MART</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
+                            <p>Stofnandi & Framleiðandi</p>
+                            <!-- <div class="team__item__social">
                                 <a href="https://www.instagram.com/slavamart_ov?igsh=MXJremhoeGdpdXpkbg%3D%3D&utm_source=qr"target = "_blank"><i class="fa fa-instagram"></i></a>
                                 <a href="https://www.facebook.com/slavamartovs"target = "_blank"><i class="fa fa-facebook"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
