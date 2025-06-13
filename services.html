@@ -30,44 +30,110 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Header Section Begin -->
+   <!-- Header Section Begin -->
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo3.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Video</a></li>
-                                <!-- <li><a href="./photo.html">Photo</a></li> -->
-                                <li class="active"><a href="./services.html">Services</a></li>
-                                <!-- <li><a href="#">Blog</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index-en.html"><img alt="" src="img/logo3.png" /></a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li><a href="./index.html">Heim</a></li>
+                  <li><a href="./about.html">Um okkur</a></li>
+                  <li><a href="./portfolio.html">Verkefnin</a></li>
+                  <!-- <li><a href="./photo.html">Photo</a></li> -->
+                  <li class="active"><a href="./services.html">Þjónusta</a></li>
+                  <!-- <li><a href="#">Blog</a>
                                     <ul class="dropdown">
                                         <li><a href="./blog.html">Blog</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li> -->
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="tel:+3548317453" class="contact__widget__item__phone"><i class="fa fa-phone"></i> +354 831 74 53</a>
-                            <a href="https://www.instagram.com/videosn_/" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-instagram"></i></a> 
-                            <a href="https://www.facebook.com/profile.php?id=61561361626344" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@SNVideoProduction" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
+                  <li><a href="./contact.html">Hafa samband</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a class="contact__widget__item__phone" href="tel:+3548317453"
+                  ><i class="fa fa-phone"></i> +354 831 74 53</a
+                >
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.instagram.com/videosn_/"
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.facebook.com/profile.php?id=61561361626344"
+                  target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.youtube.com/@SNVideoProduction"
+                  target="_blank"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+                <!-- Выбор языка -->
+                <div class="language-dropdown">
+                  <div class="lang-btn">
+                    <img
+                      alt="IS"
+                      height="14"
+                      src="img/flags/is.png"
+                      width="20"
+                    />
+                    IS <span>▼</span>
+                  </div>
+                  <div class="lang-menu">
+                    <a class="active" href="services.html">
+                      <img
+                        alt="IS"
+                        height="14"
+                        src="img/flags/is.png"
+                        width="20"
+                      />
+                      Icelandic
+                    </a>
+                    <a href="services-en.html">
+                      <img
+                        alt="EN"
+                        height="14"
+                        src="img/flags/gb.png"
+                        width="20"
+                      />
+                      English
+                    </a>
+                  </div>
                 </div>
+                <!-- Выбор языка -->
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const dropdown =
+                      document.querySelector(".language-dropdown");
+                    const menu = dropdown.querySelector(".lang-menu");
+                    const button = dropdown.querySelector(".lang-btn");
+                    dropdown.addEventListener(
+                      "mouseenter",
+                      () => (menu.style.display = "block")
+                    );
+                    dropdown.addEventListener(
+                      "mouseleave",
+                      () => (menu.style.display = "none")
+                    );
+                  });
+                </script>
+              </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
+          </div>
         </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
     </header>
     <!-- Header End -->
 

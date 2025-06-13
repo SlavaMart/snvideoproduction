@@ -34,13 +34,13 @@
       <div class="loader"></div>
     </div>
 
-    <!-- Header Section Begin -->
+     <!-- Header Section Begin -->
     <header class="header">
       <div class="container">
         <div class="row">
           <div class="col-lg-2">
             <div class="header__logo">
-              <a href="./index-en.html"><img src="img/logo3.png" alt="" /></a>
+              <a href="./index-en.html"><img alt="" src="img/logo3.png" /></a>
             </div>
           </div>
           <div class="col-lg-10">
@@ -57,53 +57,82 @@
                                         <li><a href="./blog.html">Blog</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
-                                </li>> -->
-                  <li class="active"><a href="./contact-en.html">Contact</a></li>
+                                </li> -->
+                  <li  class="active"><a href="./contact-en.html">Contact</a></li>
                 </ul>
               </nav>
               <div class="header__nav__social">
-                <a href="tel:+3548317453" class="contact__widget__item__phone"
+                <a class="contact__widget__item__phone" href="tel:+3548317453"
                   ><i class="fa fa-phone"></i> +354 831 74 53</a
                 >
                 <a
-                  href="https://www.instagram.com/videosn_/"
                   class="contact__widget__item__phone"
+                  href="https://www.instagram.com/videosn_/"
                   target="_blank"
                   ><i class="fa fa-instagram"></i
                 ></a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61561361626344"
                   class="contact__widget__item__phone"
+                  href="https://www.facebook.com/profile.php?id=61561361626344"
                   target="_blank"
                   ><i class="fa fa-facebook"></i
                 ></a>
                 <a
-                  href="https://www.youtube.com/@SNVideoProduction"
                   class="contact__widget__item__phone"
+                  href="https://www.youtube.com/@SNVideoProduction"
                   target="_blank"
                   ><i class="fa fa-youtube-play"></i
                 ></a>
+                <!-- Выбор языка -->
+                <div class="language-dropdown">
+                  <div class="lang-btn">
+                    <img
+                      alt="EN"
+                      height="14"
+                      src="img/flags/gb.png"
+                      width="20"
+                    />
+                    EN <span>▼</span>
+                  </div>
+                  <div class="lang-menu">
+                    <a href="contact.html">
+                      <img
+                        alt="IS"
+                        height="14"
+                        src="img/flags/is.png"
+                        width="20"
+                      />
+                      Icelandic
+                    </a>
+                    <a class="active" href="contact-en.html">
+                      <img
+                        alt="EN"
+                        height="14"
+                        src="img/flags/gb.png"
+                        width="20"
+                      />
+                      English
+                    </a>
+                  </div>
+                </div>
+                <!-- Выбор языка -->
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const dropdown =
+                      document.querySelector(".language-dropdown");
+                    const menu = dropdown.querySelector(".lang-menu");
+                    const button = dropdown.querySelector(".lang-btn");
+                    dropdown.addEventListener(
+                      "mouseenter",
+                      () => (menu.style.display = "block")
+                    );
+                    dropdown.addEventListener(
+                      "mouseleave",
+                      () => (menu.style.display = "none")
+                    );
+                  });
+                </script>
               </div>
-              
-              <!-- Выбор языка -->
-                        <div class="language-dropdown">
-  <div class="lang-btn">
-    <img alt="EN" height="14" src="img/flags/gb.png" width="20" />
-    EN <span>▼</span>
-  </div>
-  <div class="lang-menu">
-    <a href="contact.html">
-      <img alt="IS" height="14" src="img/flags/is.png" width="20" />
-      Icelandic
-    </a>
-    <a class="active" href="contact-en.html">
-      <img alt="EN" height="14" src="img/flags/gb.png" width="20" />
-      English
-    </a>
-  </div>
-</div>
-              <!-- Выбор языка -->
-
             </div>
           </div>
         </div>

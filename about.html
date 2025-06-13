@@ -30,44 +30,110 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Header Section Begin -->
+   <!-- Header Section Begin -->
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo3.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li class="active"><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Video</a></li>
-                                <!-- <li><a href="./photo.html">Photo</a></li> -->
-                                <li><a href="./services.html">Services</a></li>
-                                <!-- <li><a href="#">Blog</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index-en.html"><img alt="" src="img/logo3.png" /></a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li><a href="./index.html">Heim</a></li>
+                  <li class="active"><a href="./about.html">Um okkur</a></li>
+                  <li><a href="./portfolio.html">Verkefnin</a></li>
+                  <!-- <li><a href="./photo.html">Photo</a></li> -->
+                  <li><a href="./services.html">Þjónusta</a></li>
+                  <!-- <li><a href="#">Blog</a>
                                     <ul class="dropdown">
                                         <li><a href="./blog.html">Blog</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li> -->
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="tel:+3548317453" class="contact__widget__item__phone"><i class="fa fa-phone"></i> +354 831 74 53</a>
-                            <a href="https://www.instagram.com/videosn_/" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-instagram"></i></a> 
-                            <a href="https://www.facebook.com/profile.php?id=61561361626344" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@SNVideoProduction" class="contact__widget__item__phone" target = "_blank"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
+                  <li><a href="./contact.html">Hafa samband</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a class="contact__widget__item__phone" href="tel:+3548317453"
+                  ><i class="fa fa-phone"></i> +354 831 74 53</a
+                >
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.instagram.com/videosn_/"
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.facebook.com/profile.php?id=61561361626344"
+                  target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  class="contact__widget__item__phone"
+                  href="https://www.youtube.com/@SNVideoProduction"
+                  target="_blank"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+               <!-- Выбор языка -->
+                <div class="language-dropdown">
+                  <div class="lang-btn">
+                    <img
+                      alt="IS"
+                      height="14"
+                      src="img/flags/is.png"
+                      width="20"
+                    />
+                    IS <span>▼</span>
+                  </div>
+                  <div class="lang-menu">
+                    <a class="active" href="about.html">
+                      <img
+                        alt="IS"
+                        height="14"
+                        src="img/flags/is.png"
+                        width="20"
+                      />
+                      Icelandic
+                    </a>
+                    <a href="about-en.html">
+                      <img
+                        alt="EN"
+                        height="14"
+                        src="img/flags/gb.png"
+                        width="20"
+                      />
+                      English
+                    </a>
+                  </div>
                 </div>
+                <!-- Выбор языка -->
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const dropdown =
+                      document.querySelector(".language-dropdown");
+                    const menu = dropdown.querySelector(".lang-menu");
+                    const button = dropdown.querySelector(".lang-btn");
+                    dropdown.addEventListener(
+                      "mouseenter",
+                      () => (menu.style.display = "block")
+                    );
+                    dropdown.addEventListener(
+                      "mouseleave",
+                      () => (menu.style.display = "none")
+                    );
+                  });
+                </script>
+              </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
+          </div>
         </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
     </header>
     <!-- Header End -->
 
@@ -77,10 +143,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>About us</h2>
+                        <h2>Um okkur</h2>
                         <div class="breadcrumb__links">
-                            <a href="#">Home</a>
-                            <span>About</span>
+                            <a href="#">Heim</a>
+                            <span>Um okkur</span>
                         </div>
                     </div>
                 </div>
@@ -117,8 +183,8 @@
                 <div class="col-lg-6">
                     <div class="about__text">
                         <div class="section-title">
-                            <span>About videograph</span>
-                            <h2>WHo we are?</h2>
+                            <!-- <span>About videograph</span> -->
+                            <h2>Hver erum við?</h2>
                         </div>
                         <!-- <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -141,9 +207,11 @@
                             </div>
                         </div> -->
                         <div class="about__text__desc">
-                            <p>SN Video Production was founded by Slava Mart and Natali Osons as a video production company specializing in creating a wide range of video content. 
-                                We produce business videos, branded content, social media videos, event coverage, interviews, music videos, commercials, wedding films, and more. 
-                                Additionally, we offer services for organizing and hosting live online broadcasts.</p>
+                            <p>SN Video Production var stofnað af Slava Mart og Natali Osons með það að markmiði að bjóða  
+                               upp á skapandi og sérsniðna myndbandsþjónustu. Við sérhæfum okkur í framleiðslu á  
+                                fjölbreyttu efni — allt frá áhrifamiklum auglýsingum og vörumerkjamyndböndum til viðtala, 
+                            tónlistarmyndbanda, brúðkaupsmynda og beinna útsendinga. Okkar markmið er að fanga sögur 
+                        sem snerta og skila þeim í hæsta gæðaflokki, hvort sem það er fyrir fyrirtæki, einstaklinga eða viðburði.</p>
                         </div>
                     </div>
                 </div>
@@ -266,7 +334,7 @@
                             <div class="counter__item__text">
                                 <img src="img/icons/ci-1.png" alt="">
                                 <h2 class="counter_num">1230</h2>
-                                <p>Compled Projects</p>
+                                <p>Lokið verkefnum</p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +343,7 @@
                             <div class="counter__item__text">
                                 <img src="img/icons/ci-2.png" alt="">
                                 <h2 class="counter_num">325</h2>
-                                <p>Happy clients</p>
+                                <p>Ánægðir viðskiptavinir</p>
                             </div>
                         </div>
                     </div>
@@ -284,7 +352,7 @@
                             <div class="counter__item__text">
                                 <img src="img/icons/ci-3.png" alt="">
                                 <h2 class="counter_num">52</h2>
-                                <p>Marketing projects</p>
+                                <p>Markaðsverkefni</p>
                             </div>
                         </div>
                     </div>
@@ -293,7 +361,7 @@
                             <div class="counter__item__text">
                                 <img src="img/icons/ci-4.png" alt="">
                                 <h2 class="counter_num">350</h2>
-                                <p>Video scripts</p>
+                                <p>Myndbandahandrit</p>
                             </div>
                         </div>
                     </div>
@@ -310,8 +378,8 @@
              <div class="row">
                  <div class="col-lg-12">
                      <div class="section-title team__title">
-                         <span>Nice to meet</span>
-                         <h2>OUR Team</h2>
+                         <span>Gaman að kynnast</span>
+                         <h2>Teymið okkar</h2>
                      </div>
                  </div>
              </div>
@@ -324,7 +392,7 @@
                      <div class="team__item team__item--second set-bg" data-setbg="img/team/team-6.jpg">
                          <div class="team__item__text">
                              <h4>NATALI OSONS</h4>
-                             <p>Videographer</p>
+                             <p>Stofnandi & Framleiðandi</p>
                              <div class="team__item__social">
                                  <a href="https://www.instagram.com/osonsraw?igsh=MWhtYXVqOXRwM253dg=="target = "_blank"><i class="fa fa-instagram"></i></a> 
                                  <a href="https://www.facebook.com/osons"target = "_blank"><i class="fa fa-facebook"></i></a>
@@ -336,7 +404,7 @@
                      <div class="team__item team__item--third set-bg" data-setbg="img/team/team-5.jpg">
                          <div class="team__item__text">
                              <h4>SLAVA MART</h4>
-                             <p>Videographer</p>
+                             <p>Stofnandi & Framleiðandi</p>
                              <div class="team__item__social">
                                  <a href="https://www.instagram.com/slavamart_ov?igsh=MXJremhoeGdpdXpkbg%3D%3D&utm_source=qr"target = "_blank"><i class="fa fa-instagram"></i></a>
                                  <a href="https://www.facebook.com/slavamartovs"target = "_blank"><i class="fa fa-facebook"></i></a>
