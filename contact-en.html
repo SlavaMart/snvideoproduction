@@ -175,7 +175,7 @@
               <div class="contact__widget__item__text">
                 <h4>SN Video Production ehf</h4>
                 <p>Vestmannaeyjar, Iceland</p>
-                <p>Kl: 440724-1750</p>
+                <p>Kt: 440724-1750</p>
               </div>
             </div>
           </div>
@@ -245,29 +245,46 @@
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="footer__top__logo">
-                <a href="#"><img src="img/Logo11.png " alt="" /></a>
+                <a href="#"><img alt="" src="img/Logo11.png" /></a>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="footer__top__social">
                 <a
-                  href="https://www.instagram.com/videosn_/"
                   class="contact__widget__item__phone"
+                  href="https://www.instagram.com/videosn_/"
                   target="_blank"
                   ><i class="fa fa-instagram"></i
                 ></a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61561361626344"
                   class="contact__widget__item__phone"
+                  href="https://www.facebook.com/profile.php?id=61561361626344"
                   target="_blank"
                   ><i class="fa fa-facebook"></i
                 ></a>
                 <a
-                  href="https://www.youtube.com/@SNVideoProduction"
                   class="contact__widget__item__phone"
+                  href="https://www.youtube.com/@SNVideoProduction"
                   target="_blank"
                   ><i class="fa fa-youtube-play"></i
                 ></a>
+
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const dropdown =
+                      document.querySelector(".language-dropdown");
+                    const menu = dropdown.querySelector(".lang-menu");
+                    const button = dropdown.querySelector(".lang-btn");
+                    dropdown.addEventListener(
+                      "mouseenter",
+                      () => (menu.style.display = "block")
+                    );
+                    dropdown.addEventListener(
+                      "mouseleave",
+                      () => (menu.style.display = "none")
+                    );
+                  });
+                </script>
               </div>
             </div>
           </div>
@@ -278,12 +295,9 @@
               <div class="footer__option__item">
                 <h5>About us</h5>
                 <p>
-                  The "SN Video Production" company was founded by Slava Mart
-                  and Natali Osons in 2018 in Ukraine as a video production
-                  company that was engaged in filming a variety of videos, from
-                  interviews to
+                 SN Video Production was founded with the goal of providing creative and customized video services from effective advertising and
                 </p>
-                <a href="/about.html#about" class="read__more"
+                <a class="read__more" href="/about-en.html#about-en"
                   >Read more <span class="arrow_right"></span
                 ></a>
               </div>
@@ -292,9 +306,9 @@
               <div class="footer__option__item">
                 <h5>Who we are</h5>
                 <ul>
-                  <li><a href="./index.html#team">Team</a></li>
-                  <li><a href="./contact.html#contact">Contact us</a></li>
-                  <li><a href="./contact.html#contact">Locations</a></li>
+                  <li><a href="./index-en.html#team-en">Team</a></li>
+                  <li><a href="./contact-en.html#contact-en">Contact us</a></li>
+                  <li><a href="./contact-en.html#contact-en">Locations</a></li>
                 </ul>
               </div>
             </div>
@@ -302,8 +316,8 @@
               <div class="footer__option__item">
                 <h5>Our work</h5>
                 <ul>
-                  <li><a href="/services.html#services">Services</a></li>
-                  <li><a href="/portfolio.html#video">Portfolio</a></li>
+                  <li><a href="/services-en.html#services-en">Services</a></li>
+                  <li><a href="/portfolio-en.html#video-en">Portfolio</a></li>
                   <!-- <li><a href="/blog.html#blog">Blog</a></li> -->
                 </ul>
               </div>
@@ -311,13 +325,33 @@
             <div class="col-lg-4 col-md-12">
               <div class="footer__option__item">
                 <h5>Newsletter</h5>
-                <p>
-                  Send us a letter 
-                </p>
+                <ul>
+                  <li>
+                    <a href="./contact-en.html#contact-en">Subscribe to the newsletter if you want to receive news about video recordings</a>
+                  </li>
+                </ul>
                 <form action="">
                   <input type="text" placeholder="Email" />
                   <button type="submit"><i class="fa fa-send"></i></button>
+                  <a href="mailto:martovinfo@gmail.com"></a>
                 </form>
+
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const dropdown =
+                      document.querySelector(".language-dropdown");
+                    const menu = dropdown.querySelector(".lang-menu");
+                    const button = dropdown.querySelector(".lang-btn");
+                    dropdown.addEventListener(
+                      "mouseenter",
+                      () => (menu.style.display = "block")
+                    );
+                    dropdown.addEventListener(
+                      "mouseleave",
+                      () => (menu.style.display = "none")
+                    );
+                  });
+                </script>
               </div>
             </div>
           </div>
@@ -327,12 +361,12 @@
             <div class="col-lg-12 text-center">
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               <p class="footer__copyright__text">
-                Copyright &copy;
+                Copyright ©
                 <script>
                   document.write(new Date().getFullYear());
                 </script>
                 All rights reserved | This template is made with
-                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <i aria-hidden="true" class="fa fa-heart-o"></i> by
                 <a href="https://colorlib.com" target="_blank">Colorlib</a>
               </p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
