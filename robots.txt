@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://slavamart.github.io/snvideoproduction/sitemap.xml
