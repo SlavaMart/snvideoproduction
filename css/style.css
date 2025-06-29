@@ -346,34 +346,50 @@ ol {
 .header__nav__menu ul li:last-child {
   margin-right: 0;
 }
-.header__nav__menu ul li .dropdown {
+/* .header__nav__menu ul li .dropdown {
   position: absolute;
   left: 0;
   top: 60px;
-  width: 140px;
-  background: #ffffff;
+  width: 200px;
+  background: #0b0b2d;
   text-align: left;
-  padding: 2px 0;
+  padding: 0;
   z-index: 9;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
+  transition: all 0.3s;
+} */
 .header__nav__menu ul li .dropdown li {
   display: block;
   margin-right: 0;
 }
 .header__nav__menu ul li .dropdown li a {
-  font-size: 14px;
-  color: #111111;
-  padding: 8px 20px;
-  text-transform: capitalize;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 5px 16px;
+  line-height: 1.3;
+  text-transform: none;
+  position: relative;
+  display: block;
+  background: transparent !important;
+  transition: all 0.3s ease;
 }
-.header__nav__menu ul li .dropdown li a:after {
-  display: none;
+
+.header__nav__menu ul li .dropdown li a::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00bfe7;
+  transition: width 0.3s ease;
 }
+
+.header__nav__menu ul li .dropdown li a:hover::after {
+  width: 100%;
+}
+
 .header__nav__menu ul li a {
   font-size: 15px;
   font-family: "Play", sans-serif;
@@ -430,13 +446,78 @@ ol {
   color: #00bfe7;
 }
 
+
+/* Общие стили для основного меню */
+.navbar {
+  background-color: #0b0b2d; /* тёмный фон */
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:hover,
+.navbar .active > a {
+  border-bottom: 2px solid #00bfff; /* голубая линия под активным пунктом */
+}
+
+/* Выпадающее меню */
+.navbar .has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  min-width: 220px;
+  z-index: 1000;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown li a {
+  padding: 12px 20px;
+  display: block;
+  color: #111;
+  font-size: 14px;
+  text-transform: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
 /*---------------------
   Language
 -----------------------*/
 .language-dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 15px;
+  margin-left: px;
   cursor: pointer;
   font-size: 14px;
   color: #ffffff;
@@ -492,6 +573,24 @@ ol {
   Language
 -----------------------*/
 
+/*---------------------
+  Down arrow
+-----------------------*/
+
+.menu-arrow {
+  font-size: 10px;
+  margin-left: 5px;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+/* Анимация при наведении (необязательно) */
+.header__nav__menu ul li:hover .menu-arrow {
+  transform: rotate(180deg);
+}
+/*---------------------
+  Down arrow
+-----------------------*/
 
 /*---------------------
   Hero
@@ -620,6 +719,103 @@ ol {
 
 /* 
 Video section */
+
+
+/*---------------------
+  Block Start
+-----------------------*/
+.studio-services {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+}
+
+.service-card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0; /* убираем отступы между карточками */
+  flex-wrap: nowrap;
+}
+
+.service-card-link {
+  text-decoration: none;
+  flex: 1;
+  max-width: 240px;
+}
+
+.service-card {
+  font-family: 'Montserrat', sans-serif; /* или другой нужный тебе */
+  background-color: #100028;
+  border-radius: 12px;
+  padding: 25px 15px 65px; /* место под кнопку */
+  position: relative;
+  height: 120px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.service-card:hover {
+  border-color: #00bfe7;
+}
+
+.service-card .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0b0b2d;
+  margin-bottom: 12px;
+}
+
+.service-card .dot.red {
+  background-color: #00bfe7;
+}
+
+.service-card p {
+  margin: 0;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Кнопка More */
+.more-btn {
+  background-color: #00bfe7;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 0 12px 12px;
+  font-weight: 600;
+  font-size: 13px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Появляется только при наведении */
+.service-card:hover .more-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*---------------------
+ Block Start
+-----------------------*/
 
 
 /*---------------------
@@ -1286,6 +1482,51 @@ Video section */
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
+
+/*---------------------
+  Dropdown
+-----------------------*/
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  background: #000;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  min-width: 200px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+}
+
+.dropdown li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown li a:hover {
+  background-color: #111;
+}
+
+
+/*---------------------
+  Dropdown
+-----------------------*/
+
 
 /*---------------------
   Services Page
@@ -2321,4 +2562,69 @@ Video section */
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
   }
+}
+
+/* Стили для аккуратного dropdown-меню */
+/* СТИЛЬ ДЛЯ ВЫПАДАЮЩЕГО МЕНЮ */
+/* Подменю */
+.header__nav__menu ul li .dropdown {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 200px;
+  background: #0b0b2d;
+  text-align: left;
+  padding: 0;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Пункты подменю */
+.header__nav__menu ul li .dropdown li a {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 1px 14px 1px;
+  line-height: 1.3;
+  text-transform: none;
+  position: relative;
+  display: block;
+  background: transparent !important;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+/* Голубая линия при наведении */
+.header__nav__menu ul li .dropdown li a::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background-color: #00bfe7;
+  transition: width 0.3s ease;
+}
+
+.header__nav__menu ul li .dropdown li a:hover::after {
+  width: calc(100% - 28px);
+}
+
+/* Подсветка активного подпункта */
+.header__nav__menu ul li ul.dropdown li a.active {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+
+/* Линия снизу для активного подпункта */
+.header__nav__menu ul li ul.dropdown li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 14px;
+  width: calc(100% - 28px);
+  height: 2px;
+  background-color: #00bfe7;
 }
